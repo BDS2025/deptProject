@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Game</h1>
+        <div id="subject-selection">
+            <h2>Select a Subject</h2>
+            <button onclick="startGame('Computer Science')">Computer Science</button>
+            <button onclick="startGame('Statistics')">Statistics</button>
+            <button onclick="startGame('Chemistry')">Chemistry</button>
+            <button onclick="startGame('Physics')">Physics</button>
+        </div>
+        <div id="quiz-container" class="hidden">
+            <h2 id="question"></h2>
+            <div id="options"></div>
+            <p id="timer">Time Left: <span id="time-left">15</span>s</p>
+            <p id="score">Score: 0</p>
+        </div>
+        <div id="game-over" class="hidden">
+            <h2>Game Over!</h2>
+            <p>Your Score: <span id="final-score">0</span>/10</p>
+            <button onclick="restartGame()">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
